@@ -33,7 +33,7 @@ query-index $indexdir queries/select-gbif-by-activity.rq > $workdir/gbif-query.t
 
 cd $workdir
 
-echo "URL\tContent in iDigBio\tContent in GBIF\tSeen at" > url-content-times-including-unresolvable.tsv
+echo -e "URL\tContent in iDigBio\tContent in GBIF\tSeen at" > url-content-times-including-unresolvable.tsv
 cat idigbio-query.tsv | awk '{ print $1 "\t" $2 "\t\t" $3 }' >> url-content-times-including-unresolvable.tsv
 cat gbif-query.tsv | awk '{ print $1 "\t\t" $2 "\t" $3 }' >> url-content-times-including-unresolvable.tsv
 sort -u url-content-times-including-unresolvable.tsv -o url-content-times-including-unresolvable.tsv

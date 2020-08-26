@@ -1,0 +1,4 @@
+# Analysis Report
+Number of contents shared by iDigBio and GBIF: 5672
+Number of contents only in iDigBio: 1126
+Number of contents only in GBIF: 57900
